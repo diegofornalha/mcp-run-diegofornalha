@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mcp-run-diegofornalha__mcp_status",
+      "mcp__mcp-run-diegofornalha__sequential_thinking"
+    ],
+    "deny": []
+  }
+}

@@ -1,8 +1,18 @@
+Execute claude com --mcp-debug para ver os logs de erro embutidos ou verificar nessa pasta
+
 # Regras do Projeto
 
 Responda sempre em pt br portugues do brasil
 
 comando usado: 
+# IMPORTANTE: Verificar o caminho correto antes de executar!
+# O caminho pode variar dependendo de onde o projeto está localizado
+# Para verificar o caminho atual, use: pwd
+
+# Se estiver em /root/.cache/claude-cli-nodejs/-root--claude/:
+claude mcp remove mcp-run-diegofornalha && claude mcp add mcp-run-diegofornalha -- python3 /root/.cache/claude-cli-nodejs/-root--claude/mcp-run-diegofornalha/mcp-bridge.py
+
+# Se estiver em /root/:
 claude mcp remove mcp-run-diegofornalha && claude mcp add mcp-run-diegofornalha -- python3 /root/mcp-run-diegofornalha/mcp-bridge.py
 
 ## Comportamento
@@ -36,6 +46,24 @@ Sempre que modificar o bridge MCP, siga este ciclo:
 - `mcp-bridge.py`: Bridge que conecta SSE do MCP.run ao Claude Code
 - URL SSE está hardcoded no arquivo
 - Capabilities devem ser objetos vazios `{}`, não booleanos
+
+## Ferramentas MCP Disponíveis
+Sempre que possível, use essas ferramentas para melhorar a qualidade das respostas:
+
+### 1. mcp_status
+- **Uso**: `mcp__mcp-run-diegofornalha__mcp_status`
+- **Função**: Verifica se a conexão com o MCP.run está ativa
+- **Quando usar**: Para verificar status da conexão, diagnosticar problemas ou confirmar que o bridge está funcionando
+
+### 2. sequential_thinking
+- **Uso**: `mcp__mcp-run-diegofornalha__sequential_thinking`
+- **Função**: Ferramenta de pensamento sequencial estruturado
+- **Parâmetros**:
+  - `thought`: O pensamento atual
+  - `thoughtNumber`: Número do pensamento atual
+  - `totalThoughts`: Total de pensamentos planejados
+  - `nextThoughtNeeded`: Se precisa continuar (true/false)
+- **Quando usar**: Para resolver problemas complexos, organizar tarefas em etapas ou quando precisar de raciocínio estruturado
 
 
 esse projeto 
