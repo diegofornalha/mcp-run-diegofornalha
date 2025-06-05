@@ -2,6 +2,9 @@
 
 Responda sempre em pt br portugues do brasil
 
+comando usado: 
+claude mcp remove mcp-run-diegofornalha && claude mcp add mcp-run-diegofornalha -- python3 /root/mcp-run-diegofornalha/mcp-bridge.py
+
 ## Comportamento
 - Sempre conversar antes de criar ou fazer qualquer coisa
 - Evitar proatividade excessiva - ela torna as coisas difíceis

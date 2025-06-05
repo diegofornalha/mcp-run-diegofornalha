@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Bridge MCP para MCP.run - Diego Fornalha
-Conecta o SSE do MCP.run ao Claude Code via protocolo MCP
-"""
-
 import json
 import sys
 import threading
@@ -12,7 +7,6 @@ import subprocess
 import time
 from datetime import datetime
 
-# URL fixa do MCP.run
 SSE_URL = 'https://www.mcp.run/api/mcp/sse?nonce=aN5rE5HO4uqXgzNZomcRNA&username=diegofornalha&exp=1749345684581&profile=diegofornalha%2Fdefault&sig=cnkj3lXiki_3meMvd86HvUsOJdHYYK349qf5X_SQGuY'
 
 class MCPBridge:
