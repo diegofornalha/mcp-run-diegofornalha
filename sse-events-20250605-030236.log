@@ -1,0 +1,12 @@
+[2025-06-05 03:02:36] event: endpoint
+[2025-06-05 03:02:36] data: https://www.mcp.run/api/mcp/sse?sid=Fe26.2**8437d4b86955e4cab3ffd9269619349260abf949c6d25c338cf8707f23a6fd9b*BswL-oSYGPTzbNJ6BaIVrQ*DUqinLl2X5FOCzdxHQPTln7h7Fy1ojY5ZvTIOxMXDCxS8Sf0IPTSRqAPER6rQI_5*1749092856408*c25a3be7617141f59d0ccd2781cb1fa650c407ed72b146389517292e0046d0d9*FZKNLr4F3VVMUairdmsl_Gnf1ZA8q4NfUEyRDrJneg0
+[2025-06-05 03:02:36] 
+[2025-06-05 03:02:42] event: message
+[2025-06-05 03:02:42] data: {"method":"notifications/tools/list_changed","jsonrpc":"2.0"}
+[2025-06-05 03:02:42] 
+[2025-06-05 03:02:42] event: message
+[2025-06-05 03:02:42] data: {"method":"notifications/resources/list_changed","jsonrpc":"2.0"}
+[2025-06-05 03:02:42] 
+[2025-06-05 03:02:42] event: message
+[2025-06-05 03:02:42] data: {"method":"notifications/prompts/list_changed","jsonrpc":"2.0"}
+[2025-06-05 03:02:42] 
